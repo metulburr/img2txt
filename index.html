@@ -4,48 +4,46 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Img2txt by hit9</title>
+
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-
+    <div class="wrapper">
       <header>
         <h1>Img2txt</h1>
         <p>Image to Ascii Text with color support. Dead simple, something useless. written in Python</p>
+
+        <p class="view"><a href="https://github.com/hit9/img2txt">View the Project on GitHub <small>hit9/img2txt</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/hit9/img2txt/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/hit9/img2txt/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/hit9/img2txt">View On <strong>GitHub</strong></a></li>
+        </ul>
       </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/hit9/img2txt" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/hit9/img2txt/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/hit9/img2txt/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
       <section>
         <h1>img2txt</h1>
 
 <p>Image to Ascii Text. Dead simple, something useless.</p>
 
-<p>DEMO: <a href="http://hit9.org/img2txt.html">http://hit9.org/img2txt.html</a></p>
+<h2>DEMOs</h2>
 
-<h2>Install</h2>
+<p>The picture:foo.jpg (230x354)</p>
+
+<p><img src="http://hit9.org/img2txt/foo.jpg" alt=""></p>
+
+<ol>
+<li><p><code>img2txt.py foo.jpg &gt; 1.html</code> : <a href="http://hit9.org/img2txt/1.html">demo</a></p></li>
+<li><p><code>img2txt.py foo.jpg --color &gt; 2.html</code> : <a href="http://hit9.org/img2txt/2.html">demo</a></p></li>
+<li><p><code>img2txt.py foo.jpg --color --fontSize=1 &gt; 3.html</code>  : <a href="http://hit9.org/img2txt/3.html">demo</a></p></li>
+<li><p><code>img2txt.py foo.jpg --color --fontSize=1 --maxLen=354 &gt; 4.html</code> : <a href="http://hit9.org/img2txt/4.html">demo</a></p></li>
+</ol><h2>Install</h2>
 
 <pre><code>pip install git+git://github.com/hit9/img2txt.git
 </code></pre>
@@ -88,11 +86,11 @@
 <p>BSD,  short and sweet.</p>
       </section>
       <footer>
-        <p>Project maintained by <a href="https://github.com/hit9">hit9</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+        <p>This project is maintained by <a href="https://github.com/hit9">hit9</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
