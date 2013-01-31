@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Img2txt by hit9</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Img2txt</h1>
+        <p>Image to Ascii Text with color support. Dead simple, something useless. written in Python</p>
+
+        <p class="view"><a href="https://github.com/hit9/img2txt">View the Project on GitHub <small>hit9/img2txt</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/hit9/img2txt/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/hit9/img2txt/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/hit9/img2txt">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>img2txt</h1>
+
+<p>Image to Ascii Text. Dead simple, something useless.</p>
+
+<p><strong>Online Demo</strong>: <a href="http://hit9.org/img2txt.html">http://hit9.org/img2txt.html</a></p>
+
+<p>Sample:</p>
+
+<p>.. image:: <a href="https://github.com/hit9/img2txt/raw/master/sample/test.jpg">https://github.com/hit9/img2txt/raw/master/sample/test.jpg</a></p>
+
+<p>.. image:: <a href="https://github.com/hit9/img2txt/raw/master/sample/html.png">https://github.com/hit9/img2txt/raw/master/sample/html.png</a></p>
+
+<h2>Install</h2>
+
+<p>::</p>
+
+<pre><code>pip install git+git://github.com/hit9/img2txt.git
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>::</p>
+
+<pre><code>Usage: img2txt.py &lt;imgfile&gt; [--maxLen=&lt;maxLen&gt;] [--fontSize=&lt;fontSize&gt;] [--color]
+</code></pre>
+
+<p>sample usage::</p>
+
+<pre><code>img2txt.py me.jpg --maxLen=100  --fontSize=3 --color &gt; me.html
+</code></pre>
+
+<p>the optional arguments::</p>
+
+<pre><code>--maxLen             max length of the result,default:100
+--color              if in color, default:False
+--fontSize           the font-size(px) of text in the html,default:7
+</code></pre>
+
+<h2>Warning</h2>
+
+<p>Use browsers to look colored html may cause a big memory usage.</p>
+
+<h2>Hack!</h2>
+
+<p>For instance , you have some pic: foo.jpg, and its size: axb, suppose a&gt;b.</p>
+
+<p>now, <code>img2txt.py foo.jpg --maxLen=a --fontSize=1 --color &gt; foo.html</code></p>
+
+<p>see foo.html in chrome or firefox, It looks like a picture!</p>
+
+<h2>WhyHTML</h2>
+
+<p>Because it looks good in html.</p>
+
+<h2>License</h2>
+
+<p>BSD,  short and sweet.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/hit9">hit9</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
